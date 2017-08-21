@@ -21,17 +21,6 @@ fi
 
 brew update && brew install `brew outdated`
 
-fancy_echo "Installing CLI tools"
-brew install openssl
-brew install zsh
-brew install zsh-completions
-brew install bash
-brew install bash-completion
-brew install fzf
-brew install the_silver_searcher
-brew install wget
-brew install watchman # needed for jest --watch
-
 fancy_echo "Setting up tmux"
 brew install tmux
 brew install reattach-to-user-namespace
