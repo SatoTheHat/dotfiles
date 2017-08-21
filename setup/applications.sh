@@ -45,44 +45,18 @@ curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 pip3 install neovim
 
-brew install chrome-cli
 brew install git
 brew install hub
-brew install rbenv
-brew install ruby-build
-brew install imagemagick
-brew install heroku
-
-brew install postgresql
-brew services start postgresql
-brew install redis
-brew services start redis
 
 brew tap caskroom/cask
-brew cask install mongodb
-brew cask install google-chrome
 brew cask install iterm2
 brew cask install github-desktop
 brew cask install dropbox
-brew cask install cloud
-brew cask install divvy
-brew cask install skype
-brew cask install caffeine
-brew cask install balsamiq-mockups
-brew cask install screenflow
-brew cask install zoomus
-brew cask install postman
-brew cask install macdown
-brew cask install 1password
 
 fancy_echo "Installing Misc Apps"
 brew cask install discord
-brew cask install slack
-brew cask install disk-inventory-x
-brew cask install vlc
 brew cask install spotify
-brew cask install steam
-brew cask install kindle
+
 
 fancy_echo "Setting up Node with NVM"
 mkdir ~/.nvm
@@ -96,8 +70,4 @@ nvm alias default node
 fancy_echo "Installing global npm packages"
 npm install -g npm@latest
 npm install -g npm-check-updates browser-sync
-
-fancy_echo "Installing Yarn"
-brew install yarn
-export PATH="$PATH:`yarn global bin`"
 
